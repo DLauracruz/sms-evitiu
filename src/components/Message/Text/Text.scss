@@ -1,0 +1,33 @@
+.Text {
+    .text-area {
+        align-items: center;
+        border-radius: 0.7em;
+        background-color: #1e2f97;
+        color: white;
+        display: flex;
+        flex-flow: row;
+        margin: 2em 1em;
+        padding: 1em;
+        width: 97%;
+        height: 8em;
+        h3 {
+            font-size: 1.7rem;
+            margin-left: 2em;
+        }
+    }
+    .box {
+        display: flex;
+        flex-flow: column;
+        overflow-y: auto;
+        p {
+            margin: 1em 1em;
+            border-radius: 0.7em;
+            border-top: 1em;
+            padding: 0.5em;
+            color: black;
+            background-color: rgb(219, 218, 218);
+            width: 97%;
+            height: 15em;
+        }
+    }
+}

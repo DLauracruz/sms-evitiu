@@ -1,0 +1,6 @@
+@import "../../scss/mixins";
+.Users {
+    display: grid;
+    grid-template-columns: 25em 1fr 25em;
+    height: 100vh;
+}

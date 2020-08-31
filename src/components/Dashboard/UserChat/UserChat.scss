@@ -1,0 +1,101 @@
+@import "../../../scss/mixins";
+.UserChat {
+    display: grid;
+    grid-template-rows: 8em 1fr 5em;
+    height: 100vh;
+    .box-info {
+        margin-top: 1em;
+        margin-left: 1em;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        border-radius: 1em;
+        background-color: #1e2f97;
+        padding: 1em;
+        width: 95%;
+        img {
+            width: 4em;
+            height: 4em;
+            border-radius: 50%;
+        }
+        .info {
+            margin-left: 1em;
+            h3 {
+                font-size: 1.5rem;
+                color: white;
+            }
+            label {
+                color: white;
+                font-size: 1rem;
+            }
+        }
+        .btn-container {
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 60%;
+            height: 100%;
+            button {
+                align-self: flex-end;
+                background-color: #1ca7ec;
+                border-radius: 0.5em;
+                color: white;
+                font-size: 1rem;
+                width: 40%;
+            }
+        }
+    }
+    .message {
+        display: flex;
+        flex-flow: column;
+        overflow-y: auto;
+        @include scroll-style;
+        p {
+            margin: 0.5em 1em;
+            border-radius: 0.5em;
+            padding: 0.5em;
+            color: white;
+            width: 60%;
+        }
+        .msg-owner {
+            align-self: flex-end;
+            background-color: #1ca7ec;
+        }
+        .msg-cust {
+            align-self: flex-start;
+            background-color: rgb(121, 112, 251);
+        }
+    }
+    .text {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .send-msg {
+            width: 100%;
+            input {
+                width: 85%;
+                height: 40%;
+                padding: 0.5em 1em;
+                border-radius: 0.4em;
+                border: 1px solid gray;
+                background-color: rgb(224, 224, 224);
+            }
+            i {
+                font-size: 1.6em;
+                color: #1ca7ec;
+                margin-left: 1em;
+            }
+        }
+        .extra-opt {
+            width: 100%;
+            i {
+                font-size: 1.6em;
+                color: black;
+                margin-left: 1.5em;
+            }
+        }
+    }
+}

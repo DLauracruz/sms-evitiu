@@ -1,0 +1,47 @@
+@import "../../../../scss/_mixins";
+.Card {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    img {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+    }
+    .info {
+        margin-left: 0.5em;
+        h3 {
+            font-size: 1rem;
+        }
+        label {
+            display: block;
+            color: rgb(129, 129, 129);
+            font-size: 0.9rem;
+            margin: 0.5em 0;
+        }
+        p {
+            width: 100%;
+            padding: 2px 5px;
+            border: 10x solid gray;
+            font-size: 0.8rem;
+            color: rgb(165, 165, 165);
+        }
+        @include truncate-txt;
+    }
+}
+
+.selected {
+    background: rgb(32, 51, 154);
+    background: linear-gradient(180deg, rgba(32, 51, 154, 1) 0%, rgba(29, 158, 230, 1) 100%);
+    h3,
+    label,
+    p {
+        color: white !important;
+    }
+    transition-duration: 1s;
+}

@@ -1,0 +1,82 @@
+@import "../../../scss/mixins";
+.UserInfo {
+    display: flex;
+    flex-flow: column;
+    padding: 1em 1em 0 1em;
+    overflow-y: auto;
+    @include scroll-style;
+    img {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        margin-left: 2em;
+        margin-bottom: 1em;
+    }
+    .info {
+        h3 {
+            font-size: 1.2rem;
+        }
+        label {
+            display: block;
+            width: 100%;
+            color: gray;
+            margin: 0.5em 0;
+        }
+    }
+    .tags {
+        margin-top: 1em;
+        h3 {
+            width: 5em;
+            font-size: 1rem;
+            background-color: #7cd5f5;
+            border-radius: 3em;
+            padding: 0.2em 0;
+            text-align: center;
+            font-weight: 700;
+        }
+        ul {
+            li {
+                margin: 0.5em 0;
+                .follow {
+                    color: #7cd5f5;
+                }
+                .subscribe {
+                    color: #5659aa;
+                }
+                .sold {
+                    color: #7cd5f8;
+                }
+                .new-customer {
+                    color: #717eef;
+                }
+            }
+        }
+    }
+    .media {
+        margin-top: 0.5em;
+        h3 {
+            width: 5em;
+            font-size: 1rem;
+            background-color: #7cd5f5;
+            border-radius: 3em;
+            padding: 0.2em 0;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1em;
+        }
+        .files {
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img {
+                width: 30%;
+                border-radius: 0.5em;
+                margin: 0;
+                margin-bottom: 1em;
+                width: 5em;
+                height: 5em;
+            }
+        }
+    }
+}

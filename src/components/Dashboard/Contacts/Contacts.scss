@@ -1,0 +1,36 @@
+@import "../../../scss/mixins";
+.Contacts {
+    display: grid;
+    grid-template-rows: 4em 3em 1fr;
+    height: 100vh;
+    padding: 0 1em;
+    input {
+        border-radius: 0.5em;
+        background-color: rgb(235, 235, 235);
+        padding: 0.8em 1.2em;
+        margin: 1em 0;
+    }
+    .buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1em;
+        button {
+            cursor: pointer;
+            width: 48%;
+            background-color: #7bd6f5;
+            padding: 0.5em 0;
+            text-align: center;
+            border-radius: 0.5em;
+        }
+        button:hover {
+            background-color: rgb(59, 40, 165);
+            color: white;
+            transition-duration: 0.3s;
+        }
+    }
+    .cards {
+        @include list-card();
+    }
+}

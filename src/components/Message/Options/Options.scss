@@ -1,0 +1,62 @@
+.Options {
+    padding: 0.7em 0.7em;
+    .button {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 100%;
+        input {
+            border-radius: 0.5em 0 0 0.5em;
+            background-color: rgb(235, 235, 235);
+            width: 90%;
+            padding: 0 1em;
+            height: 3em;
+        }
+        .btn {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 0.5em 0.5em 0;
+            height: 3em;
+            width: 10%;
+            background-color: rgb(235, 235, 235);
+        }
+        button {
+            width: 100%;
+            margin-top: 1em;
+            background-color: #7bd6f5;
+            padding: 0.5em 0;
+            text-align: center;
+            border-radius: 0.5em;
+        }
+        i {
+            margin: 0 15em;
+        }
+    }
+    .btn-option {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 100%;
+        button {
+            width: 100%;
+            margin-top: 1em;
+            background-color: #e0e0e2;
+            padding: 1em 0;
+            text-align: center;
+            border-radius: 0.5em;
+            font-size: 1.2em;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.selected {
+    background: rgb(32, 51, 154);
+    background: linear-gradient(180deg, rgba(32, 51, 154, 1) 0%, rgba(29, 158, 230, 1) 100%);
+    color: white;
+    transition-duration: 1s;
+}
